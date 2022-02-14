@@ -39,7 +39,7 @@ class RangeValidator {
     if (Number.isNaN(v)) {
       throw new RangeError("value must be not NaN");
     }
-    if (v < this.toValue) {
+    if (v < this.fromValue) {
       throw new RangeError("from should be <= to");
     }
     this._toValue = v;
